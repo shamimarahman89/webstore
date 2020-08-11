@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+  </head>
+  <body>
+    <header>
+      <div id="menu">
+        <i class="material-icons">menu</i>
+      </div>
+
+      <div id="store_name">
+        <h3>
+          SAFEER & CO
+        </h3>
+      </div>
+
+      <div id="search-wrapper">
+        <input value="SEARCH" />
+        <button><i class="material-icons">search</i></button>
+      </div>
+
+      <div id="user-options">
+        <i class="material-icons">room</i>
+        <i class="material-icons">account_circle</i>
+        <i class="material-icons">shop</i>
+        <i class="material-icons">favorite_bord</i>
+      </div>
+    </header>
+
+    <main>
+      <nav>
+        <div id="departments">
+          <ul>
+            <ul>
+              <a href="index.html">Home</a>
+            </ul>
+            <ul>
+              <a href="men.html">Men</a>
+            </ul>
+            <ul>
+              <a href="women.html">Women</a>
+            </ul>
+            <ul>
+              <a href="kids.html">Kids</a>
+            </ul>
+            <ul>
+              <a href="others.html">Sale</a>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+      <section id="contact">
+        <div id="form-heading">
+            <h1> Contact Us </h1>
+            <p> Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible. </p>
+        </div>
+        
+        <form id="contact-form" action="https://httpbin.org/post" method="POST">
+            <div id="upper-form">
+            <label for="Name"><span class="text-danger">*</span> Name</label>
+            <input
+                id="name"
+                name="name"
+                autofocus
+                type="text"
+                tabindex="1"
+                required
+            >
+            <label for="user-email"><span class="text-danger">*</span> Email</label>
+            <input
+                id="user-email"
+                name="email"
+                type="email"
+                tabindex="2"
+                required
+            >
+            <label for="address">Address</label>
+            <input
+                id="address"
+                name="address"
+                type="text"
+                autocomplete="street-address"
+                tabindex="3"
+            >
+            <label for="city">City</label>
+            <select
+                id="city"
+                name="city"
+                type="text"
+                autocomplete="address-level2"
+                tabindex="4"
+            >
+            >
+                <option selected>Toronto</option>
+                <option>Vaughan</option>
+                <option>Brampton</option>
+                <option>Hamilton</option>
+                <option>London</option>
+                <option>Richmond Hill</option>
+                <option>Kitchener</option>
+                <option>Windsor</option>
+                <option>Mississauga</option>
+                <option>Barrie</option>
+                <option>Guelph</option>
+                <option>Oshawa</option>
+                <option>Waterloo</option>
+            </select>
+            
+            <label for="postal-code">Postal Code</label>
+            <input
+                id="postal-code"
+                class="form-control"
+                name="postal-code"
+                type="text"
+                autocomplete="postal-code"
+                placeholder="M1W 3A3"
+                pattern="^[A-Za-z]\d[A-Za-z][ -]\d[A-Za-z]\d$"
+                tabindex="5"
+            >
+            </div>
+            <div id="middle-form">
+                <label for="what-about">What is this about?</label>
+            
+                <div id="radio">
+                    <div class="some-class">
+                    <input type="radio" class="radio" name="about" value="question" id="question" checked onclick="handleRadioClick(this);"/>
+                    <label for="question">Question?</label>
+                    <input type="radio" class="radio" name="about" value="comment" id="comment" onclick="handleRadioClick(this);"/>
+                    <label for="comment">Comment</label>
+                    <input type="radio" class="radio" name="about" value="order-problem" id="order-problem" onclick="handleRadioClick(this);"/>
+                    <label for="order-Problem">Order Problem</label>
+                    </div>
+                </div>
+            </div>
+            <div id="ordnum" style="display: none;">
+                <label for="order-number">Order Number</label>
+                <input type="text" id="order-number" name="order-name" tabindex="6">
+            
+            </div>
+            
+            
+            <textarea id="message" name="message" rows="14" tabindex="7" Placeholder="Keep your message here..." ></textarea>
+            <div id="hidden-field">
+                <input type="hidden" id="student-name" name="StName" value="ShamimaRahman">
+            </div>
+
+            <div class="contact-buttons">
+                <input type="submit" name="submit" value="Submit" tabindex="8">
+            </div> 
+        </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer">
+      <section id="upper-footer">
+        <div id="email">
+          <a href="contact.html"><i class="material-icons">email</i> Contact Us</a>
+        </div>
+        <div id="phone">
+          <a href="tel:4164905151"><i class="material-icons">phone</i>Phone</a>
+        </div>
+        <div id="app">
+          <a href="subscribe.html"><i class="material-icons">drafts</i>Subscribe</a>
+        </div>
+      </section>
+      <section id="mid-footer">
+        <h1>About Us</h1>
+        <p>
+          Welcome to our world! We’re your go-to style experts, a one-stop destination for the
+          modern people who likes fashion, who wants the freedom to move effortlessly from
+          day-to-night in easy-chic clothes made for desk, dinner and beyond.We believe… In
+          easy-dressing, effortless elegance and playful sophistication. In gorgeous clothes
+          accessible to all and flattering silhouettes for every figure. In take-you-anywhere pieces
+          that don’t get in your way. Follow us on Instagram, Facebook or twitter or check out our
+          blog for everyday style inspiration, trend alerts and the latest fashion gossip. Show us
+          how you rock our clothes by tagging us at #Safeer&co. And don’t forget to subscribe to our
+          newsletter for exclusive offers, sneak peeks and special deals.
+        </p>
+      </section>
+      <section id="lower-footer">
+        <div id="social-media">
+          <a href="https://twitter.com" target="_blank">
+            <img src="./images/twitter.png" alt="Twitter" width="20" height="20" />
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src="./images/facebook.png" alt="Facebook" width="20" height="20" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="./images/instagram.png" alt="Instagram" width="20" height="20" />
+          </a>
+        </div>
+        <div id="policy">
+          <div>Privacy Policy</div>
+          <div>Terms & Conditions</div>
+          <div>Site Feedback</div>
+        </div>
+        <div id="copy">
+          &copy; Shamima Rahman 2020
+        </div>
+      </section>
+    </div>
+
+    <script>
+        window.onload = function(){
+            let form = document.querySelector('#contact-form');
+            form.onsubmit = function(event){
+                if(!form.checkValidity()){
+                    form.classList.add('was-validated');
+                    event.preventDefault();
+                    return false;
+                }
+                return true;
+            };
+
+            
+        };
+        function handleRadioClick(myRadio) {
+              if(myRadio.value === "order-problem") {
+                document.getElementById("ordnum").style.display = "block"; 
+              } else {
+                document.getElementById("ordnum").style.display = "none"; 
+              }
+
+        };
+    </script>
+    
+
+  </body>
+</html>

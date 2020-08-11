@@ -1,0 +1,310 @@
+/* Add any CSS you need to this file. */
+
+html,
+body {
+  height: 100%;
+  overflow-anchor: auto;
+}
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: rgb(243, 236, 240);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#menu {
+  margin: 20px;
+  width: 50px;
+  text-align: center;
+}
+
+#store_name {
+  font-family: monospace;
+  font-size: 1.5em;
+  width: 200px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#search-wrapper {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+#search-wrapper input {
+  flex: 1;
+  max-width: 300px;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 1em;
+  border: 1px solid lightgray;
+}
+#search-wrapper button {
+  color: dimgray;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid lightgray;
+  max-width: 50px;
+}
+
+#user-options {
+  margin: 20px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#user-options > i {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+main {
+  padding-top: 10vh;
+}
+
+main nav {
+  height: 40px;
+  background: #e2e4e7;
+  border-bottom: 1px solid rgb(7, 42, 54);
+}
+
+main nav ul ul {
+  float: left;
+  justify-content: center;
+}
+main nav ul ul a {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  display: flex;
+  line-height: 40px;
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+}
+#home-body {
+  overflow-wrap: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#new-arrival {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-height: 400px;
+  padding: 10px;
+}
+#content {
+  background-color: rgb(222, 235, 243);
+  margin-left: 10px;
+  border: 2px snow;
+  padding: 80px;
+  justify-content: center;
+  text-align: center;
+  max-height: 300px;
+}
+#content h2 {
+  border: wheat;
+  background-color: rgb(252, 244, 244);
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+#main-body {
+  display: flex;
+  overflow: hidden;
+}
+#category {
+  flex: 2;
+}
+#i-content {
+  display: flex;
+  flex: 6;
+  /*align-items: flex-start;*/
+  flex-flow: row wrap;
+}
+#footer {
+  background-color: rgb(243, 236, 240);
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+#upper-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(222, 225, 228);
+  padding-top: 10px;
+}
+
+#mid-footer h1 {
+  text-align: center;
+  font-size: bold;
+}
+#mid-footer p {
+  text-align: center;
+  font-size: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#lower-footer {
+  align-items: center;
+  border-top: 1px solid rgb(82, 80, 80);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+#social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+#policy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 450px;
+}
+#video-sale {
+  position: relative;
+}
+#video-sale video {
+  position: relative;
+  z-index: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.overlay p {
+  text-decoration: rgb(12, 12, 12);
+  font-size: 3em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+#subscribe{
+  box-sizing: border-box;
+  padding: 4em;
+  margin: 6em;
+  border: 2px solid rgb(126, 123, 123);
+  background-color: rgb(229, 233, 240);
+}
+#form-heading h1,p {
+  text-align: center;
+}
+#subscribe-form form{
+    
+  padding: 2em;
+  max-width: 600px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+#subscribe-form label{
+  font-size: 1.3em;
+  font-weight: bold;
+  align-items: center;
+}
+#subscribe-form input{
+  padding: .2em;
+  font-size: 1em;
+  border: 1px solid rgb(67, 97, 128);
+}
+
+.subscribe-buttons input[type="submit"]{
+  width: 200px;
+  background-color: rgb(169, 172, 175);
+  color: rgb(12, 12, 12);
+  text-align: center;
+  font-size: 1em;
+  padding: 2em;
+}
+.subscribe-buttons{
+  grid-column: 2 / 3;
+}
+#contact {
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+#contact-form{
+  margin-top: 3em;
+  padding: 2em;
+  border: 1px solid black;
+  max-width: 900px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#upper-form{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+input, textarea{
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1em;
+  border: 1px solid rgb(206, 212, 218);
+}
+input:focus,
+textarea:focus{
+    outline: 2px solid lightskyblue;
+}
+textarea{
+  grid-column: 1 / 3;
+}
+.contact-buttons{
+  grid-column: 1 / 3;
+  text-align: center;
+}
+.contact-buttons input[type="submit"]{
+  
+  width: 150px;
+  background-color: rgb(7, 30, 54);
+  color: white;
+}
+#middle-form{
+  padding-top: 20px;
+  display: flex;
+  flex: 1;
+  justify-content:left;
+}
+
+.some-class {
+  display: flex;
+  justify-content: 1;
+  padding-left: 100px;
+  
+}
+.some-class label {
+  display: flex;
+  padding: 0px 1em 0px 0px;
+}
+
+
+
+
+
+
+
+
